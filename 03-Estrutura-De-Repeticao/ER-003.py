@@ -6,15 +6,28 @@
 #       Estado Civil: 's', 'c', 'v', 'd';
 
 nome = str(input("Nome:   "))
-idade = int(input("Idade:   "))
-salario = float(input("Salário:   "))
-sexo = str(input("Sexo:   ")).upper()
-estcivil = str(input("Estado Civil:   ")).upper()
-discr = [len(nome) < 4,
-         idade < 1 or idade > 150,
-         salario <= 0,
-         sexo != "M" and sexo != "F",
-         estcivil != "S" and estcivil != "C" and estcivil != "V" and estcivil != "D"].count(True)
+while len(nome) < 4:
+    print("Nome inválido! Tente novamente")
+    nome = str(input("Nome:   "))
 
-while discr != 0:
-    if discr[0]:
+idade = int(input("Idade:   "))
+while idade < 1 or idade > 150:
+    print("Idade inválida! Tente novamente")
+    idade = int(input("Idade:   "))
+
+salario = float(input("Salário:   "))
+while salario <= 0:
+    print("Salário inválida! Tente novamente")
+    salario = float(input("Salário:   "))
+
+sexo = str(input("Sexo:   ")).upper()
+while sexo != "M" and sexo != "F":
+    print("Sexo inválido! Tente novamente")
+    sexo = str(input("Sexo:   ")).upper()
+
+estcivil = str(input("Estado Civil:   ")).upper()
+while estcivil != "S" and estcivil != "C" and estcivil != "V" and estcivil != "D":
+    print("Estado Civil inválido! Tente novamente")
+    estcivil = str(input("Estado Civil:   ")).upper()
+
+print("Tudo certo!")
