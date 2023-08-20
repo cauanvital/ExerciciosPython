@@ -5,7 +5,7 @@ n = int(input("Insira um número inteiro:   "))
 a = 0
 b = 1
 c = 0
-d = ""
+d = "0 1"
 
 while c < n:
     c = a + b
