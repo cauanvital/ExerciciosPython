@@ -4,7 +4,7 @@ print(-1 > -6)
 n = []
 maior = 0
 for i in range(5):
-    n.append(int(input(f"Insira o {i + 1} número inteiro:   ")))
+    n.append(int(input(f"Insira o {i + 1}º número inteiro:   ")))
     if i == 0:
         maior = n[0]
     if n[i] > maior:
