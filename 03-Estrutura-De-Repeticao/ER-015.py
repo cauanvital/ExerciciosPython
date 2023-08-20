@@ -11,7 +11,7 @@ while c < n:
     c = a + b
     a = b
     b = c
-    if c > n:
+    if c >= n:
         break
     d = f"{d}{c}" if c == 1 else f"{d}, {c}"
 
