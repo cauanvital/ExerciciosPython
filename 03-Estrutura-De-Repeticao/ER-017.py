@@ -11,7 +11,5 @@ if n == 1 or n == 0:
 
 for i in range(1, n):
     res *= i
-    f = f". {i} {f}"
 
-f = f"{n} {f}"
-print(f"{n}! = {f} = {res}")
+print(f"{n}! = {res}")
