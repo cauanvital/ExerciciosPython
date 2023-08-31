@@ -5,23 +5,9 @@
 # gordo e do mais magro, além da média das alturas e dos pesos dos clientes
 
 i = 1
-
 codverify = ""
-sumPeso = 0
-sumAltura = 0
-qtdCliente = 0
-
-pesoMenor = None
-cPesMenor = 0
-
-pesoMaior = None
-cPesMaior = 0
-
-alturaMenor = None
-cAlturMenor = 0
-
-alturaMaior = None
-cAlturMaior = 0
+alturaMaior = alturaMenor = pesoMaior = pesoMenor = None
+cAlturMaior = cAlturMenor = cPesMaior = cPesMenor = qtdCliente = sumAltura = sumPeso = 0
 
 while i == 1:
     cod = int(input("\nCódigo do cliente:   "))
@@ -41,10 +27,8 @@ while i == 1:
     altura = float(input("Altura do cliente:   "))
 
     if pesoMenor is None:
-        pesoMenor = peso
-        pesoMaior = peso
-        alturaMenor = altura
-        alturaMaior = altura
+        pesoMenor = pesoMaior = peso
+        alturaMenor = alturaMaior = altura
         cPesMenor = cPesMaior = cAlturMaior = cAlturMenor = cod
 
     # Define o menor peso
