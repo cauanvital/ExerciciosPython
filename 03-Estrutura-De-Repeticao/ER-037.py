@@ -4,12 +4,11 @@
 # Ao encerrar o programa também deve ser informados os códigos e valores do clente mais alto, do mais baixo, do mais
 # gordo e do mais magro, além da média das alturas e dos pesos dos clientes
 
-i = 1
 codverify = ""
 alturaMaior = alturaMenor = pesoMaior = pesoMenor = None
 cAlturMaior = cAlturMenor = cPesMaior = cPesMenor = qtdCliente = sumAltura = sumPeso = 0
 
-while i == 1:
+while True:
     cod = int(input("\nCódigo do cliente:   "))
 
     # Verifica se o código de cliente já foi inserido antes
