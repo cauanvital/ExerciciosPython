@@ -1,0 +1,10 @@
+Resultado da votação:
+
+Foram computados 10 votos.
+
+Jogador | Quantidade de Votos | Porcentagem
+1       | 2                   | 20.00%
+2       | 4                   | 40.00%
+3       | 2                   | 20.00%
+4       | 2                   | 20.00%
+O melhor jogador foi o número 2, com 4 votos, correspondendo a 40.0% do total de votos.
