@@ -82,6 +82,6 @@ for i in contagem:
                       f"{percentual(contagem[i], qtdVotos)}%")
 
 with open("EL-018.txt", "a") as arquivo:
-    arquivo.write(f"\nO melhor jogador foi o número {jogadorMais},"
+    arquivo.write(f"\nO melhor jogador foi o número {jogadorMais}"
                   f" com {contagem[jogadorMais]} votos,"
-                  f" correspondendo a {percentual(contagem[jogadorMais], qtdVotos)}% do total de votos.")
+                  f" correspondendo a {percentual(contagem[jogadorMais], qtdVotos)}% do total de votos.\n")
